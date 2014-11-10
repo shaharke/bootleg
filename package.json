@@ -1,0 +1,28 @@
+{
+  "name": "bootleg",
+  "version": "0.9.1",
+  "description": "bootleg =======",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaharke/bootleg.git"
+  },
+  "author": "Shahar Kedar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaharke/bootleg/issues"
+  },
+  "homepage": "https://github.com/shaharke/bootleg",
+  "dependencies": {
+    "bluebird": "^2.3.11"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^2.0.1",
+    "q": "^1.0.1"
+  }
+}
