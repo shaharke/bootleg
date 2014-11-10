@@ -1,6 +1,6 @@
 # Bootleg
 
-[![Build Status](https://travis-ci.org/shaharke/bootleg.svg?branch=develop)](https://travis-ci.org/shaharke/bootleg)
+[![Build Status](https://travis-ci.org/shaharke/bootleg.svg?branch=master)](https://travis-ci.org/shaharke/bootleg)
 
 
 Bootleg is an extensible initialization layer for [Node.js](http://nodejs.org/)
