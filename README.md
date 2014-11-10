@@ -10,7 +10,7 @@ Bootleg allows initialization *phases* to be registered for an application.
 These phases will be executed sequentially during startup, after which the
 application will be ready to run.
 
-The main different between Bootleg and Bootable is that Bootleg works with promises to evaluate
+The main difference between Bootleg and Bootable is that Bootleg works with promises to evaluate
 the execution of phases.
 
 
