@@ -1,3 +1,5 @@
-/**
- * Created by shahar on 11/10/14.
- */
+var chai = require('chai');
+chai.use(require('chai-as-promised'))
+
+global.expect = chai.expect;
+global.bootleg = require('../')
