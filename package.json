@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/shaharke/bootleg",
   "dependencies": {
-    "bluebird": "^2.3.11"
+    "bluebird": "3.3.4"
   },
   "devDependencies": {
     "chai": "^1.9.2",
