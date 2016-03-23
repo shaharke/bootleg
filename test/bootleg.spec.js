@@ -98,5 +98,29 @@ describe('', function() {
       expect(app.boot()).to.be.rejected
     })
 
+    it('should inject service', function() {
+      var app = bootleg();
+      app.phase('dependency', function() {
+        return { foo: "bar"};
+      })
+      app.phase(function(config, dependecy) {
+        expect(dependecy, 'Dependecy is undefined').to.not.be.undefined;
+        expect(dependecy, 'Wrong dependency?').to.have.property('foo', 'bar')
+        expect(config, 'Config is undefined').to.not.be.undefined;
+        return {}
+      }, {foo: "bar"}, '@dependency')
+      return app.boot()
+    })
+
+    it('should fail in case service needed to be injected before it was initialized', function() {
+
+      var app = bootleg();
+
+      app.phase(function(dependency){ return {} }, '@dependency');
+      app.phase('dependency', function() { return {foo: "bar"}});
+      expect(app.boot()).to.be.rejected
+
+    })
+
   })
 })
