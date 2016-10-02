@@ -1,7 +1,7 @@
 {
   "name": "bootleg",
-  "version": "0.9.3",
-  "description": "bootleg =======",
+  "version": "0.9.4",
+  "description": "Library for asynchrouns bootstraping of Node.JS applications",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec"
