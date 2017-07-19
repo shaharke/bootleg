@@ -20,7 +20,22 @@ the execution of phases.
 
 ## Usage
 
-_TBD_
+    const bootleg = require('bootleg');
+
+    module.exports = function bootApp() {
+    const app = bootleg();
+
+    // pass the phase name and you're module that you want to execute.
+    // the module that you require need to be wrapped with function, object module won't work.
+    
+    app.phase('phase1', require('my_modules/file_name'));
+
+    // now you can pass the first module to the next phase as a parameter!
+
+    app.phase('phase2', require('my_modules/another_file_name'), @phase1);
+    
+    return app.boot().then((components) => {
+    }).done();
 
 ## Tests
 
